@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  node:
+    image: node:18.7.0-alpine3.16
+    container_name: msi-node
+    working_dir: /application
+    tty: true
+    volumes:
+      - .:/application
+    networks:
+      - msi-dev
+    ports:
+      - "5173:5173"
+    restart: unless-stopped
+    
+networks:
+  msi-dev:
+    driver: bridge

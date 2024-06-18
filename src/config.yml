@@ -1,0 +1,8 @@
+results:
+  positive: 1
+  negative: -2
+  neutral: 0
+rating:
+  great: 3
+  good: 2
+  ok: 1

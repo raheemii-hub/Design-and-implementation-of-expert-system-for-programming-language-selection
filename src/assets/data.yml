@@ -1,0 +1,501 @@
+# result:
+# positive
+# neutral
+# negative
+generic_questions:
+  - query: "Do you like math?"
+    answers:
+      - value: "Yes"
+        result:
+          positive:
+            - "data_analytics"
+            - "machine_learning"
+            - "robotics"
+      - value: "No"
+        result:
+          negative:
+            - "data_analytics"
+            - "machine_learning"
+            - "robotics"
+
+  - query: "Which of the above gives you the most pleasure?"
+    answers:
+      - value: "Do It Yourself"
+        result:
+          positive:
+            - "robotics"
+      - value: "Drawing"
+        result:
+          positive:
+            - "webdev"
+      - value: "Solving Puzzles"
+        result:
+          positive:
+            - "data_analytics"
+      - value: "Playing games"
+        result:
+          positive:
+            - "gamedev"
+
+  - query: "Which of the above interests you the least?"
+    answers:
+      - value: "Websites"
+        result:
+          negative:
+            - "webdev"
+      - value: "Mobile applications"
+        result:
+          negative:
+            - "mobile"
+      - value: "Mathematics"
+        result:
+          negative:
+            - "machine_learning"
+            - "data_analytics"
+            - "robotics"
+
+  - query: "Which of the following things would you most like to program?"
+    answers:
+      - value: "Mobile game"
+        result:
+          positive:
+            - "gamedev"
+            - "mobile"
+      - value: "PC Game"
+        result:
+          positive:
+            - "gamedev"
+            - "desktop"
+      - value: "Website"
+        result:
+          positive:
+            - "webdev"
+      - value: "Kettle controller"
+        result:
+          positive:
+            - "firmware"
+      - value: "Cat robot"
+        result:
+          positive:
+            - "robotics"
+
+  - query: "If you were to create a video game, what would you do?"
+    answers:
+      - value: "AI of opponents"
+        result:
+          positive:
+            - "machine_learning"
+      - value: "A server to play with"
+        result:
+          positive:
+            - "backend"
+      - value: "Mobile version of the game"
+        result:
+          positive:
+            - "mobile"
+      - value: "The computer version of the game"
+        result:
+          positive:
+            - "desktop"
+      - value: "None of these"
+        result:
+          negative:
+            - "machine_learning"
+            - "backend"
+            - "mobile"
+            - "desktop"
+
+  - query: "Do you like to deal with equipment?"
+    answers:
+      - value: "Yes"
+        result:
+          positive:
+            - "robotics"
+            - "firmware"
+      - value: "No"
+        result:
+          negative:
+            - "robotics"
+            - "firmware"
+
+categories:
+  data_analytics:
+    questions:
+      - query: "What personality type describes you better?"
+        answers:
+          - value: "Logician"
+            result: "positive"
+          - value: "Creator"
+            result: "negative"
+      - query: "Do you pay attention to small details, e.g. errors in numbers?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you a well-organized person, e.g. you plan your day in advance?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you like to brag about yours to others?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Can you find your way around big data?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  machine_learning:
+    questions:
+      - query: "Are you interested in genetic algorithms?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Curious about how AI generates images?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "You are interested in recognizing human speech and converting it into text?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Would you like to teach your computer how to troubleshoot?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "You are interested in recognizing images and analyzing them?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  robotics:
+    questions:
+      - query: "Are you able to read a simple electronic diagram?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Would you like to create something tangible, such as a robot?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "You would like to analyze sensor data?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "You like to work with real objects, e.g. plants, animals?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you interested in automating various processes?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  webdev:
+    questions:
+      - query: "You wonder what's going on under the websites you visit?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Would you like to create your own website?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you interested in programming in interpreted languages?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+          - value: "I do not know"
+            result: "neutral"
+      - query: "Are you interested in design?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Would you like your apps to work on every device?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  desktop:
+    questions:
+      - query: "Would you like to develop applications for the computer?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Would you like your code to be less universal but more optimal?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+          - value: "I can't tell"
+            result: "neutral"
+      - query: "Would you like to create a Photoshop program??"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you think that the need to install an application is not a disadvantage?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you spend more time in front of your computer than your mobile phone?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  mobile:
+    questions:
+      - query: "Would you like to create apps for your mobile phone?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you know your way around mobile phones?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you spend more time in front of your cell phone than your computer??"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Have you ever used developer mode on your phone?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you think smartphones will completely replace desktop computers?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+          - value: "I don't have an opinion"
+            result: "neutral"
+
+  firmware:
+    questions:
+      - query: "Would you like to create a controller for a microwave?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Would you like to go deep into the functioning of the equipment?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you interested in writing code for one specific hardware, e.g. TV?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you interested in programming in low-level languages?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you interested in writing code that is transparent to the user?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  backend:
+    questions:
+      - query: "You would like to write your own computer system?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Have you ever wanted to create your own server, e.g. for a game?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Czy interesuje cię tworzenie systemów bazodanowych?"
+        answers:
+          - value: "Tak"
+            result: "positive"
+          - value: "Nie"
+            result: "negative"
+      - query: "Would you like to create your own programming language?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Is it interesting for you to create embedded applications?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+
+  gamedev:
+    questions:
+      - query: "Have you thought about creating your own games?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you able to solve geometric problems?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Are you interested in technologies like Unity or Unreal Engine?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+          - value: "I don not know"
+            result: "neutral"
+      - query: "Do you like to make up your own stories?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+      - query: "Do you have spatial imagination?"
+        answers:
+          - value: "Yes"
+            result: "positive"
+          - value: "No"
+            result: "negative"
+# rating:
+# great - 3
+# good - 2
+# ok - 1
+languages:
+  - key: "python"
+    name: "Python"
+    rating:
+      great:
+        - "data_analytics"
+        - "machine_learning"
+        - "robotics"
+      ok:
+        - "webdev"
+
+  - key: "javascript"
+    name: "JavaScript"
+    rating:
+      great:
+        - "webdev"
+      ok:
+        - "desktop"
+
+  - key: "java"
+    name: "Java"
+    rating:
+      great:
+        - "mobile"
+        - "desktop"
+
+  - key: "c"
+    name: "C"
+    rating:
+      great:
+        - "firmware"
+        - "backend"
+
+  - key: "cpp"
+    name: "C++"
+    rating:
+      great:
+        - "gamedev"
+        - "desktop"
+        - "robotics"
+      good:
+        - "firmware"
+        - "backend"
+
+  - key: "csharp"
+    name: "C#"
+    rating:
+      great:
+        - "desktop"
+        - "gamedev"
+      good:
+        - "webdev"
+
+  - key: "r"
+    name: "R"
+    rating:
+      great:
+        - "data_analytics"
+      good:
+        - "machine_learning"
+
+  - key: "kotlin_and_swift"
+    name: "Kotlin And Swift"
+    rating:
+      great:
+        - "mobile"
+
+  - key: "php"
+    name: "PHP"
+    rating:
+      great:
+        - "webdev"
